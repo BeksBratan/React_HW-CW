@@ -6,10 +6,14 @@ function App() {
         name:'Anna',
         age:19
     }
+    function hi() {
+        alert("Hello Beks")
+    }
     return (
         <div className="App">
             <Blue name={user.name} age={user.age}/>
             <Red name={user.name} age={user.age}/>
+            <button onClick={hi}> click</button>
         </div>
     );
 }
