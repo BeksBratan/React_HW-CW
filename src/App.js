@@ -1,21 +1,17 @@
-import Blue from "./components/User/User";
-import Red from './components/User2/User2';
+import logo from './logo.svg';
+import './App.css';
+import AboutUsPage from "./components/aboutUs/AboutUs";
+import PortfolioPage from "./components/porfolioPage/PorfolioPage";
+import ContactPage from "./components/contactsPage/ContactsPage";
 
 function App() {
-    const user = {
-        name:'Anna',
-        age:19
-    }
-    function hi() {
-        alert("Hello Beks")
-    }
-    return (
-        <div className="App">
-            <Blue name={user.name} age={user.age}/>
-            <Red name={user.name} age={user.age}/>
-            <button onClick={hi}> click</button>
-        </div>
-    );
+  return (
+    <div className="App">
+        <AboutUsPage/>
+        <PortfolioPage/>
+        <ContactPage/>
+    </div>
+  );
 }
 
 export default App;
