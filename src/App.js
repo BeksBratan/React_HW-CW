@@ -1,15 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import AboutUsPage from "./components/aboutUs/AboutUs";
-import PortfolioPage from "./components/porfolioPage/PorfolioPage";
-import ContactPage from "./components/contactsPage/ContactsPage";
+import UserPage from "./pages/usersPage/UsersPage";
 
 function App() {
   return (
     <div className="App">
-        <AboutUsPage/>
-        <PortfolioPage/>
-        <ContactPage/>
+        <UserPage/>
     </div>
   );
 }
